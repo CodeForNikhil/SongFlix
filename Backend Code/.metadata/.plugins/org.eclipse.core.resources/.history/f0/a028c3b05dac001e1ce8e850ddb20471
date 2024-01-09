@@ -1,0 +1,5 @@
+package com.songlyrics.cors;
+
+public class CorsConfig {
+
+}

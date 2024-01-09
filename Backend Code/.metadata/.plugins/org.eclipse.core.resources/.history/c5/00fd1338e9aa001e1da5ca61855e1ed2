@@ -1,0 +1,31 @@
+package com.songlyrics.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class SongLyrics {
+	private static final String url = "https://genius-song-lyrics1.p.rapidapi.com/search/?q=Post%20Malone";
+	
+	private static final String xRapidAPIkey = "63e9a7f7eamshfbdd518d2383d88p1d417cjsnebf98b7e2da5";
+	
+	private static final String xRapidAPIHost = "genius-song-lyrics1.p.rapidapi.com";
+	/*
+	 * OkHttpClient client = new OkHttpClient();
+
+	Request request = new Request.Builder()
+	.url("https://genius-song-lyrics1.p.rapidapi.com/search/?q=Post%20Malone&per_page=10&page=1")
+	.get()
+	.addHeader("X-RapidAPI-Key", "63e9a7f7eamshfbdd518d2383d88p1d417cjsnebf98b7e2da5")
+	.addHeader("X-RapidAPI-Host", "genius-song-lyrics1.p.rapidapi.com")
+	.build();
+
+	Response response = client.newCall(request).execute();
+	 */
+	public Object getAllSongsByArtist(String artistname) {
+		return artistname;
+	
+	}
+
+}
